@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PCs - Jornal da Tecnologia</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+    if (localStorage.getItem("tema") === "escuro") {
+      document.body.classList.add("dark-theme");
+    }
+  </script>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo-link"><img src="favicon.svg" alt="Jornal da Tecnologia" class="nav-logo"></a>
+      <button id="menuToggle">☰</button>
+      <div id="menuDropdown">
+        <a href="index.html">Início</a>
+        <a href="html.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="js.html">JavaScript</a>
+        <a href="python.html">Python</a>
+        <a href="jogos.html">Jogos</a>
+        <a href="pcs.html">PCs</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div id="menuLinks">
+        <a href="index.html">Início</a>
+        <a href="html.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="js.html">JavaScript</a>
+        <a href="python.html">Python</a>
+        <a href="jogos.html">Jogos</a>
+        <a href="pcs.html" class="active">PCs</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div class="container-busca" id="containerBusca">
+        <input type="search" id="pesquisa" placeholder="Digite para pesquisar...">
+        <button id="btnLupa" aria-label="Pesquisar">🔍</button>
+        <output id="resultadoBusca" for="pesquisa"></output>
+      </div>
+      <div id="areaLogin"></div>
+      <button id="btnTema">☀️</button>
+    </nav>
+  </header>
+
+  <main class="artigo">
+    <article>
+      <img src="imagens/pc.webp" alt="Logo PCs" width="150">
+      <span class="tag">Hardware</span>
+      <h1>PCs</h1>
+
+      <section>
+        <h2>O que compõe um computador</h2>
+        <img src="imagens/componentes-pc.png" alt="Componentes internos de um computador" width="280">
+        <p>Um PC é formado por vários componentes trabalhando juntos: o processador (CPU) executa as instruções, a placa-mãe conecta tudo, a memória RAM guarda dados temporários, o armazenamento (SSD/HD) guarda arquivos permanentemente, e a placa de vídeo (GPU) processa gráficos.</p>
+      </section>
+
+      <section>
+        <h2>PC para jogos</h2>
+        <p>Para rodar jogos atuais com boa qualidade, o componente mais importante é a placa de vídeo dedicada, seguida por um processador de médio/alto desempenho e pelo menos 16 GB de memória RAM. Um SSD também reduz bastante o tempo de carregamento dos jogos.</p>
+      </section>
+
+      <section>
+        <h2>PC para trabalho leve</h2>
+        <p>Para tarefas do dia a dia — navegação, documentos, videochamadas — um processador básico, 8 GB de RAM e um SSD (mesmo pequeno) já garantem uma experiência tranquila, sem necessidade de placa de vídeo dedicada.</p>
+      </section>
+
+      <section>
+        <h2>Notebook ou desktop?</h2>
+        <img src="imagens/notebook-vs-desktop.png" alt="Comparação entre notebook e desktop lado a lado" width="280">
+        <p>Notebooks oferecem mobilidade, mas geralmente custam mais caro por um desempenho equivalente e têm menos espaço para upgrades. Desktops são mais baratos, fáceis de atualizar peça por peça, mas ficam fixos em um só lugar.</p>
+      </section>
+
+      <section>
+        <h2>Como escolher</h2>
+        <p>O primeiro passo é definir o uso principal: jogos, trabalho, estudo ou edição de vídeo/imagem exigem configurações bem diferentes. Definir um orçamento e priorizar os componentes mais importantes para aquele uso específico evita gastar dinheiro com recursos que não serão aproveitados.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Jornal da Tecnologia. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Jornal da Tecnologia</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <script>
+    if (localStorage.getItem("tema") === "escuro") {
+      document.body.classList.add("dark-theme");
+    }
+  </script>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo-link"><img src="favicon.svg" alt="Jornal da Tecnologia" class="nav-logo"></a>
+      <button id="menuToggle">☰</button>
+      <div id="menuDropdown">
+        <a href="index.html">Início</a>
+        <a href="html.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="js.html">JavaScript</a>
+        <a href="python.html">Python</a>
+        <a href="jogos.html">Jogos</a>
+        <a href="pcs.html">PCs</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div id="menuLinks">
+        <a href="index.html">Início</a>
+        <a href="html.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="js.html">JavaScript</a>
+        <a href="python.html">Python</a>
+        <a href="jogos.html">Jogos</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="pcs.html">PCs</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div id="areaLogin">Entrar</div>
+      <button id="btnTema">☀️</button>
+    </nav>
+  </header>
+
+  <main class="artigo">
+    <article class="login-container">
+      <h1>Entrar</h1>
+
+      <div class="login-tabs">
+        <button id="tabLogin" class="tab-ativa">Entrar</button>
+        <button id="tabCadastro">Cadastro</button>
+      </div>
+
+      <form id="formLogin">
+        <label for="loginEmail">E-mail:</label>
+        <input type="email" id="loginEmail" required>
+
+        <label for="loginSenha">Senha:</label>
+        <input type="password" id="loginSenha" required>
+
+        <button type="submit">Entrar</button>
+      </form>
+
+      <form id="formCadastro" class="escondido">
+        <label for="cadNome">Nome:</label>
+        <input type="text" id="cadNome" required>
+
+        <label for="cadEmail">E-mail:</label>
+        <input type="email" id="cadEmail" required>
+
+        <label for="cadSenha">Senha:</label>
+        <input type="password" id="cadSenha" required minlength="4">
+
+        <button type="submit">Cadastrar</button>
+      </form>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Jornal da Tecnologia. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

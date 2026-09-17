@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Jornal da Tecnologia</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+    if (localStorage.getItem("tema") === "escuro") {
+      document.body.classList.add("dark-theme");
+    }
+  </script>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo-link"><img src="favicon.svg" alt="Jornal da Tecnologia" class="nav-logo"></a>
+      <button id="menuToggle">☰</button>
+      <div id="menuDropdown">
+        <a href="index.html">Início</a>
+        <a href="html.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="js.html">JavaScript</a>
+        <a href="python.html">Python</a>
+        <a href="jogos.html">Jogos</a>
+        <a href="pcs.html">PCs</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div id="menuLinks">
+        <a href="index.html">Início</a>
+        <a href="html.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="js.html">JavaScript</a>
+        <a href="python.html">Python</a>
+        <a href="jogos.html">Jogos</a>
+        <a href="pcs.html">PCs</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="contato.html" class="active">Contato</a>
+      </div>
+      <div id="areaLogin">Entrar</div>
+      <button id="btnTema">☀️</button>
+    </nav>
+  </header>
+
+  <main class="artigo">
+    <article>
+      <img src="imagens/contato.png" alt="Ícone de Contato" width="150">
+      <span class="tag">Contato</span>
+      <h1>Contato</h1>
+
+      <section>
+        <h2>Fale Conosco</h2>
+        <p>Tem dúvidas, sugestões ou deseja colaborar com o Jornal da Tecnologia? Use o formulário abaixo para entrar em contato conosco.</p>
+      </section>
+
+      <section>
+        <h2>Suporte</h2>
+        <p>Se você encontrou algum problema no site ou deseja relatar erros, nossa equipe de suporte está pronta para ajudar.</p>
+      </section>
+
+      <section>
+        <h2>Sugestões</h2>
+        <p>Gostaria de ver novos conteúdos ou temas abordados? Envie suas ideias e participe da construção do nosso jornal.</p>
+      </section>
+
+      <section>
+        <h2>Formulário de Contato</h2>
+        <form id="formContato">
+          <fieldset>
+            <legend>Envie sua mensagem</legend>
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+          </fieldset>
+        </form>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Jornal da Tecnologia. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

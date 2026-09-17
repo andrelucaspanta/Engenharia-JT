@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogos - Jornal da Tecnologia</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+    if (localStorage.getItem("tema") === "escuro") {
+      document.body.classList.add("dark-theme");
+    }
+  </script>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo-link"><img src="favicon.svg" alt="Jornal da Tecnologia" class="nav-logo"></a>
+      <button id="menuToggle">☰</button>
+      <div id="menuDropdown">
+        <a href="index.html">Início</a>
+        <a href="html.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="js.html">JavaScript</a>
+        <a href="python.html">Python</a>
+        <a href="jogos.html">Jogos</a>
+        <a href="pcs.html">PCs</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div id="menuLinks">
+        <a href="index.html">Início</a>
+        <a href="html.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="js.html">JavaScript</a>
+        <a href="python.html">Python</a>
+        <a href="jogos.html" class="active">Jogos</a>
+        <a href="pcs.html">PCs</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div class="container-busca" id="containerBusca">
+        <input type="search" id="pesquisa" placeholder="Digite para pesquisar...">
+        <button id="btnLupa" aria-label="Pesquisar">🔍</button>
+        <output id="resultadoBusca" for="pesquisa"></output>
+      </div>
+      <div id="areaLogin"></div>
+      <button id="btnTema">☀️</button>
+    </nav>
+  </header>
+
+  <main class="artigo">
+    
+    <article>
+      <img src="imagens/jogos.jpeg" alt="Logo Jogos" width="150">
+      <span class="tag">Entretenimento</span>
+      <h1>Jogos</h1>
+
+      <section>
+        <h2>O que são jogos eletrônicos</h2>
+        <p>Jogos eletrônicos (ou videogames) são experiências interativas criadas para entretenimento, desafio ou até aprendizado. Vão desde jogos simples de celular até produções gigantescas que rivalizam com filmes de Hollywood em orçamento e narrativa.</p>
+      </section>
+
+      <section>
+        <h2>Jogos AAA</h2>
+        <img src="imagens/jogo-destaque.png" alt="Capa de um jogo AAA em destaque" width="250">
+        <p>O termo "AAA" (triple A) é usado para os jogos de maior orçamento e produção da indústria, geralmente feitos por grandes estúdios. Eles costumam ter gráficos de ponta, trilhas sonoras orquestradas e campanhas de marketing intensas,
+          mas nem sempre são os mais inovadores — muitos jogos independentes (indies) surpreendem justamente por fugir dessa fórmula.</p>
+      </section>
+
+      <section>
+        <h2>Launchers e promoções</h2>
+        <img src="imagens/launcher-rockstar.png" alt="Print da loja da Rockstar com promoções" width="280">
+        <p>Launchers são plataformas usadas para comprar, baixar e jogar títulos digitais — como Steam, Epic Games Store e Rockstar Games Launcher. 
+          Cada uma tem sua própria loja e promoções recorrentes, geralmente em datas como Black Friday e liquidações de verão, quando jogos podem ter descontos de até 90%. Vale sempre comparar preços entre plataformas antes de comprar.</p>
+      </section>
+
+      <section>
+        <h2>eSports</h2>
+        <img src="imagens/esports-arena.png" alt="Arena de campeonato de eSports" width="280">
+        <p>Os esportes eletrônicos transformaram jogos competitivos em espetáculos assistidos por milhões de pessoas, com times profissionais, patrocínios e prêmios milionários em jogos como League of Legends, CS2 e Valorant.</p>
+      </section>
+
+      <section>
+        <h2>Jogos e aprendizado</h2>
+        <p>Jogos também são usados como ferramenta educacional — a chamada "gamificação" aplica elementos de jogos (pontos, níveis, desafios) em contextos de ensino, tornando o aprendizado mais engajante.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Jornal da Tecnologia. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

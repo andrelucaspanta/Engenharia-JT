@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python - Jornal da Tecnologia</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+    if (localStorage.getItem("tema") === "escuro") {
+      document.body.classList.add("dark-theme");
+    }
+  </script>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo-link"><img src="favicon.svg" alt="Jornal da Tecnologia" class="nav-logo"></a>
+      <button id="menuToggle">☰</button>
+      <div id="menuDropdown">
+        <a href="index.html">Início</a>
+        <a href="html.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="js.html">JavaScript</a>
+        <a href="python.html">Python</a>
+        <a href="jogos.html">Jogos</a>
+        <a href="pcs.html">PCs</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div id="menuLinks">
+        <a href="index.html">Início</a>
+        <a href="html.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="js.html">JavaScript</a>
+        <a href="python.html" class="active">Python</a>
+        <a href="jogos.html">Jogos</a>
+        <a href="pcs.html">PCs</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div class="container-busca" id="containerBusca">
+        <input type="search" id="pesquisa" placeholder="Digite para pesquisar...">
+        <button id="btnLupa" aria-label="Pesquisar">🔍</button>
+        <output id="resultadoBusca" for="pesquisa"></output>
+      </div>
+      <div id="areaLogin">Entrar</div>
+      <button id="btnTema">☀️</button>
+    </nav>
+  </header>
+
+  <main class="artigo">
+    <article>
+      <img src="imagens/python.svg" alt="Logo Python" width="150">
+      <span class="tag">Versatilidade</span>
+      <h1>Python</h1>
+
+      <section>
+        <h2>Facilidade de Aprendizado</h2>
+        <p>Graças à sua sintaxe clara e intuitiva, o Python é uma das melhores linguagens para iniciantes. 
+        Seu código se parece muito com a linguagem humana, o que torna o aprendizado mais rápido e acessível.</p>
+      </section>
+
+      <section>
+        <h2>Bibliotecas e Comunidade</h2>
+        <p>Frameworks como Django, Flask, NumPy e Pandas tornam o Python poderoso e flexível. 
+        Além disso, a comunidade ativa contribui constantemente com novas ferramentas e suporte.</p>
+      </section>
+
+      <section>
+        <h2>Versatilidade</h2>
+        <p>Seja para criar sites, analisar dados ou automatizar tarefas, o Python se adapta a diferentes necessidades. 
+        É usado em inteligência artificial, ciência de dados, automação de processos e até em jogos.</p>
+      </section>
+
+      <section>
+        <h2>Python no Mercado de Trabalho</h2>
+        <p>Empresas de tecnologia, bancos, startups e até órgãos públicos utilizam Python em seus sistemas. 
+        Saber Python aumenta muito as chances de empregabilidade e crescimento profissional.</p>
+      </section>
+
+      <section>
+        <h2>Exemplo de Código</h2>
+        <p>Um simples programa em Python para imprimir "Olá, Mundo!":</p>
+        <pre><code>print("Olá, Mundo!")</code></pre>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Jornal da Tecnologia. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jornal da Tecnologia - Início</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+    if (localStorage.getItem("tema") === "escuro") {
+      document.body.classList.add("dark-theme");
+    }
+  </script>
+  <script>
+    if (localStorage.getItem("tema") === "escuro") {
+      document.body.classList.add("dark-theme");
+    }
+  </script>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo-link"><img src="favicon.svg" alt="Jornal da Tecnologia" class="nav-logo"></a>
+      <button id="menuToggle">☰</button>
+      <div id="menuDropdown">
+        <a href="index.html">Início</a>
+        <a href="html.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="js.html">JavaScript</a>
+        <a href="python.html">Python</a>
+        <a href="jogos.html">Jogos</a>
+        <a href="pcs.html">PCs</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div id="menuLinks">
+        <a href="index.html" class="active">Início</a>
+        <a href="html.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="js.html">JavaScript</a>
+        <a href="python.html">Python</a>
+        <a href="jogos.html">Jogos</a>
+        <a href="pcs.html">PCs</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div class="container-busca" id="containerBusca">
+        <input type="search" id="pesquisa" placeholder="Digite para pesquisar...">
+        <button id="btnLupa" aria-label="Pesquisar">🔍</button>
+        <output id="resultadoBusca" for="pesquisa"></output>
+      </div>
+      <div id="areaLogin">Entrar</div>
+      <button id="btnTema"><img id="iconeTema" src="imagens/sol.svg" alt="Alternar Tema" width="30"></button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Masthead estilo jornal -->
+    <div class="masthead">
+      <p class="masthead-date">Boas Vindas</p>
+      <h1 class="masthead-title">JORNAL DA TECNOLOGIA</h1>
+      <p class="masthead-sub">
+        As principais linguagens e ferramentas da web — HTML, CSS, JavaScript e Python —
+        explicadas de forma simples e prática, e mais notícias sobre jogos, PCs e tecnologia em geral.
+      </p>
+    </div>
+
+    <!-- Capa: manchete principal + notas secundárias -->
+    <section class="frontpage">
+      <article class="headline">
+        <span class="tag">Em destaque</span>
+        <img src="imagens/html.svg" alt="Logo HTML" width="120">
+        <h2><a href="html.html">HTML: a base da web</a></h2>
+        <p>
+          Descubra como o HTML estrutura páginas e dá forma ao conteúdo. Toda página da internet
+          começa com ele: entenda os elementos fundamentais que sustentam a web e por que essa é
+          a primeira linguagem que todo desenvolvedor aprende.
+        </p>
+        <a class="read-more" href="html.html">Leia mais →</a>
+      </article>
+
+      <div class="secondary-list">
+        <article class="secondary">
+          <img src="imagens/css.svg" alt="Logo CSS" width="50">
+          <div>
+            <span class="tag">Design</span>
+            <h3><a href="css.html">CSS: estilo e design</a></h3>
+            <p>Veja como o CSS transforma páginas simples em layouts atraentes.</p>
+          </div>
+        </article>
+
+        <article class="secondary">
+          <img src="imagens/js.svg" alt="Logo JavaScript" width="50">
+          <div>
+            <span class="tag">Interatividade</span>
+            <h3><a href="js.html">JavaScript: interatividade</a></h3>
+            <p>Entenda como o JS adiciona dinamismo e interação ao site.</p>
+          </div>
+        </article>
+
+        <article class="secondary">
+          <img src="imagens/python.svg" alt="Logo Python" width="50">
+          <div>
+            <span class="tag">Versatilidade</span>
+            <h3><a href="python.html">Python: versatilidade</a></h3>
+            <p>Descubra como o Python é usado em ciência de dados, web e automação.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Jornal da Tecnologia. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

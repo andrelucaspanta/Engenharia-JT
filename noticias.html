@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notícias - Jornal da Tecnologia</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+    if (localStorage.getItem("tema") === "escuro") {
+      document.body.classList.add("dark-theme");
+    }
+  </script>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo-link"><img src="favicon.svg" alt="Jornal da Tecnologia" class="nav-logo"></a>
+      <button id="menuToggle">☰</button>
+      <div id="menuDropdown">
+        <a href="index.html">Início</a>
+        <a href="html.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="js.html">JavaScript</a>
+        <a href="python.html">Python</a>
+        <a href="jogos.html">Jogos</a>
+        <a href="pcs.html">PCs</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div id="menuLinks">
+        <a href="index.html">Início</a>
+        <a href="html.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="js.html">JavaScript</a>
+        <a href="python.html">Python</a>
+        <a href="jogos.html">Jogos</a>
+        <a href="pcs.html">PCs</a>
+        <a href="noticias.html" class="active">Notícias</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div id="areaLogin"></div>
+      <button id="btnTema">☀️</button>
+    </nav>
+  </header>
+
+  <main class="artigo">
+    <article>
+      <span class="tag">Notícias</span>
+      <h1>Notícias</h1>
+
+      <section class="noticia">
+      <img src="imagens/noticia-lancamentos-set.png" alt="Capa de jogo destaque de setembro" class="noticia-thumb">
+      <div>
+        <h2>Setembro de 2026 tem uma das janelas de lançamentos mais cheias do ano</h2>
+        <p>Depois de um agosto mais tranquilo, setembro chegou com uma leva grande de jogos para PC e consoles. Entre os destaques estão <em>Marvel's Wolverine</em>, novo jogo da Insomniac Games com exclusividade para PS5, chegando dia 15; e <em>Onimusha: Way of the Sword</em>, que traz de volta a franquia da Capcom após duas décadas, disponível desde o dia 4 para PS5, Xbox Series, Nintendo Switch 2 e PC. O mês ainda reserva <em>EA Sports FC 27</em>, <em>NBA 2K27</em> e <em>Silent Hill: Townfall</em>, entre outros títulos aguardados.</p>
+      </div>
+    </section>
+
+    <section class="noticia">
+      <img src="imagens/noticia-amd.png" alt="Logo da AMD" class="noticia-thumb">
+      <div>
+        <h2>AMD anuncia novidades de hardware para computadores</h2>
+        <p>Durante uma feira de tecnologia recente, a AMD apresentou atualizações no seu catálogo de processadores para desktop, incluindo novos modelos com a tecnologia 3D V-Cache (que aumenta o desempenho em jogos) e a expansão da placa de vídeo Radeon RX 9070 GRE para outros mercados. A empresa também confirmou que vai manter suporte e novos lançamentos para o soquete AM5 até 2029, dando mais tempo de vida útil para quem monta um PC com essa plataforma hoje.</p>
+      </div>
+    </section>
+
+    <section class="noticia">
+      <img src="imagens/noticia-gpu.png" alt="Placa de vídeo em destaque" class="noticia-thumb">
+      <div>
+        <h2>Disputa entre placas de vídeo segue acirrada em 2026</h2>
+        <p>O mercado de placas de vídeo está mais competitivo do que nunca entre Nvidia e AMD. A Nvidia lançou a RTX 5090 como sua opção mais potente, voltada para quem busca desempenho máximo em 4K, enquanto a AMD trouxe a RX 9070 XT com boa aceitação no mercado intermediário. Do lado da Nvidia, também chamou atenção a RTX 5070, que ficou popular rapidamente por oferecer desempenho próximo ao da geração anterior top de linha por um preço mais competitivo — ainda que modelos com pouca memória de vídeo (VRAM) tenham recebido críticas da imprensa especializada.</p>
+      </div>
+    </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Jornal da Tecnologia. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

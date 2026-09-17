@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS - Jornal da Tecnologia</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+    if (localStorage.getItem("tema") === "escuro") {
+      document.body.classList.add("dark-theme");
+    }
+  </script>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo-link"><img src="favicon.svg" alt="Jornal da Tecnologia" class="nav-logo"></a>
+      <button id="menuToggle">☰</button>
+      <div id="menuDropdown">
+        <a href="index.html">Início</a>
+        <a href="html.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="js.html">JavaScript</a>
+        <a href="python.html">Python</a>
+        <a href="jogos.html">Jogos</a>
+        <a href="pcs.html">PCs</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div id="menuLinks">
+        <a href="index.html">Início</a>
+        <a href="html.html">HTML</a>
+        <a href="css.html" class="active">CSS</a>
+        <a href="js.html">JavaScript</a>
+        <a href="python.html">Python</a>
+        <a href="jogos.html">Jogos</a>
+        <a href="pcs.html">PCs</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div class="container-busca" id="containerBusca">
+        <input type="search" id="pesquisa" placeholder="Digite para pesquisar...">
+        <button id="btnLupa" aria-label="Pesquisar">🔍</button>
+        <output id="resultadoBusca" for="pesquisa"></output>
+      </div>
+      <div id="areaLogin">Entrar</div>
+       <button id="btnTema">☀️</button>
+    </nav>
+  </header>
+
+  <main class="artigo">
+  <article>
+    <img src="imagens/css.svg" alt="Logo CSS" width="150">
+    <span class="tag">Design</span>
+    <h1>CSS</h1>
+
+    <section>
+      <h2>O que é CSS</h2>
+      <p>CSS (Cascading Style Sheets) é a linguagem usada para estilizar páginas web. Ele controla cores, fontes, espaçamento e layout dos elementos HTML.</p>
+    </section>
+
+    <section>
+      <h2>Estrutura</h2>
+      <p>O CSS funciona com seletores e propriedades. Cada seletor identifica um elemento HTML e aplica estilos definidos por pares de propriedade e valor.</p>
+    </section>
+
+    <section>
+      <h2>Design Responsivo</h2>
+      <p>Com CSS é possível criar sites que se adaptam a diferentes tamanhos de tela, garantindo uma boa experiência em celulares, tablets e computadores.</p>
+    </section>
+
+    <section>
+      <h2>Aprendizado</h2>
+      <p>Existem diversos tutoriais e cursos online que ensinam desde o básico até técnicas avançadas de CSS, como Flexbox e Grid Layout.</p>
+    </section>
+
+    <section>
+      <h2>Exemplo de Código</h2>
+      <pre><code>body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}</code></pre>
+    </section>
+
+    <section>
+      <h2>Recursos para Iniciantes</h2>
+      <p>Sites como W3Schools e MDN Web Docs oferecem guias completos e exemplos práticos para aprender CSS.</p>
+    </section>
+  </article>
+</main>
+
+  <footer>
+    <p>&copy; 2026 Jornal da Tecnologia. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

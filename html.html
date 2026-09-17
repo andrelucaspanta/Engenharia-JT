@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML - Jornal da Tecnologia</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+    if (localStorage.getItem("tema") === "escuro") {
+      document.body.classList.add("dark-theme");
+    }
+  </script>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo-link"><img src="favicon.svg" alt="Jornal da Tecnologia" class="nav-logo"></a>
+      <button id="menuToggle">☰</button>
+      <div id="menuDropdown">
+        <a href="index.html">Início</a>
+        <a href="html.html">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="js.html">JavaScript</a>
+        <a href="python.html">Python</a>
+        <a href="jogos.html">Jogos</a>
+        <a href="pcs.html">PCs</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div id="menuLinks">
+        <a href="index.html">Início</a>
+        <a href="html.html" class="active">HTML</a>
+        <a href="css.html">CSS</a>
+        <a href="js.html">JavaScript</a>
+        <a href="python.html">Python</a>
+        <a href="jogos.html">Jogos</a>
+        <a href="pcs.html">PCs</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <div class="container-busca" id="containerBusca">
+        <input type="search" id="pesquisa" placeholder="Digite para pesquisar...">
+        <button id="btnLupa" aria-label="Pesquisar">🔍</button>
+        <output id="resultadoBusca" for="pesquisa"></output>
+      </div>
+      <div id="areaLogin">Entrar</div>
+      <button id="btnTema">☀️</button>
+    </nav>
+  </header>
+
+  <main class="artigo">
+  <article>
+    <img src="imagens/html.svg" alt="Logo HTML" width="150">
+    <span class="tag">Linguagem</span>
+    <h1>HTML</h1>
+
+    <section>
+      <h2>O que é HTML</h2>
+      <p>HTML (Hypertext Markup Language) é a linguagem padrão para descrever a estrutura de documentos exibidos na web.</p>
+    </section>
+
+    <section>
+      <h2>Estrutura</h2>
+      <p>HTML consiste em uma série de elementos e atributos que marcam todos os componentes de um documento, permitindo que sejam estruturados de maneira significativa.</p>
+    </section>
+
+    <section>
+      <h2>Criação</h2>
+      <p>Os documentos HTML são arquivos de texto simples que podem ser criados e editados em qualquer editor de texto comum, como o Bloco de Notas ou TextEdit.</p>
+    </section>
+
+    <section>
+      <h2>Aprendizado</h2>
+      <p>Existem muitos tutoriais disponíveis, como os da W3Schools, que oferecem exemplos práticos de como usar HTML, CSS, JavaScript e mais.</p>
+    </section>
+
+    <section>
+      <h2>Conceitos Básicos</h2>
+      <p>O MDN Web Docs fornece uma base de conhecimento sobre conceitos e sintaxes importantes do HTML, como criar hyperlinks e estruturar uma página web.</p>
+    </section>
+
+    <section>
+      <h2>Recursos para Iniciantes</h2>
+      <p>Para quem está começando, há artigos que ensinam os princípios básicos para a confecção de um site em HTML. Esses recursos são ótimos para quem deseja aprender ou aprimorar suas habilidades em HTML.</p>
+    </section>
+  </article>
+</main>
+
+  <footer>
+    <p>&copy; 2026 Jornal da Tecnologia. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
